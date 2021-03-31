@@ -4,18 +4,20 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>Blog de Romain Boyrie | Information de Data Science</title>
+<title>Statistiques Bayesiennes | Blog de Romain Boyrie</title>
 <meta name="generator" content="Jekyll v4.1.1" />
-<meta property="og:title" content="Blog de Romain Boyrie" />
+<meta property="og:title" content="Statistiques Bayesiennes" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Information de Data Science" />
-<meta property="og:description" content="Information de Data Science" />
-<link rel="canonical" href="https://blog.rboyrie.info/" />
-<meta property="og:url" content="https://blog.rboyrie.info/" />
+<meta name="description" content="Quelques rappel sur les outils statistiques basés sur la théorie de Bayes." />
+<meta property="og:description" content="Quelques rappel sur les outils statistiques basés sur la théorie de Bayes." />
+<link rel="canonical" href="https://blog.rboyrie.info/statistiques/2021/03/05/Bayesian-Statistics.html" />
+<meta property="og:url" content="https://blog.rboyrie.info/statistiques/2021/03/05/Bayesian-Statistics.html" />
 <meta property="og:site_name" content="Blog de Romain Boyrie" />
-<meta property="og:image" content="https://blog.rboyrie.info/images/logo.png" />
+<meta property="og:image" content="https://blog.rboyrie.info/images/bayes/bayes.png" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2021-03-05T00:00:00-06:00" />
 <script type="application/ld+json">
-{"url":"https://blog.rboyrie.info/","@type":"WebSite","headline":"Blog de Romain Boyrie","image":"https://blog.rboyrie.info/images/logo.png","name":"Blog de Romain Boyrie","description":"Information de Data Science","@context":"https://schema.org"}</script>
+{"url":"https://blog.rboyrie.info/statistiques/2021/03/05/Bayesian-Statistics.html","@type":"BlogPosting","headline":"Statistiques Bayesiennes","dateModified":"2021-03-05T00:00:00-06:00","datePublished":"2021-03-05T00:00:00-06:00","image":"https://blog.rboyrie.info/images/bayes/bayes.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://blog.rboyrie.info/statistiques/2021/03/05/Bayesian-Statistics.html"},"description":"Quelques rappel sur les outils statistiques basés sur la théorie de Bayes.","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://blog.rboyrie.info/feed.xml" title="Blog de Romain Boyrie" /><link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
@@ -83,103 +85,96 @@ window.onload = wrap_img;
 </header>
 <main class="page-content" aria-label="Content">
       <div class="wrapper">
-        <div class="home"><p>Bienvenu(e) sur ce site. Il contient des informations pour faire de la science avec le langage <a href="https://www.python.org/">Python</a>.</p>
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
-<p>Les points forts de ce site est qu’il est en français et qu’il contient des sujets particulièrement intéressants sur les mathématiques, les statistiques et l’informatique.</p>
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Statistiques Bayesiennes</h1><p class="page-description">Quelques rappel sur les outils statistiques basés sur la théorie de Bayes.</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2021-03-05T00:00:00-06:00" itemprop="datePublished">
+        Mar 5, 2021
+      </time>
+       • <span class="read-time" title="Estimated read time">
+    
+    
+      1 min read
+    
+</span></p>
 
-<p>Au travers de plusieurs domaines comme la médecine, les transports, la finance et l’industrie, les pages de ce blog sont à la base, une boîte à idées pour trouver des solutions pour observer et expérimenter la science pour tous.</p>
+    
+      <p class="category-tags"><i class="fas fa-tags category-tags-icon"></i></i> 
+      
+        <a class="category-tags-link" href="/categories/#statistiques">statistiques</a>
+        
+      
+      </p>
+    
 
-<p>Il s’agit notamment de compléter les pages des sciences de <a href="https://fr.wikipedia.org/wiki/Wikip%C3%A9dia:Accueil_principal">wikipédia</a> par des exemples reproductibles chez soi, avec un langage informatique.</p>
+    
+      
+        <div class="pb-5 d-flex flex-wrap flex-justify-end">
+          <div class="px-2">
 
-<p>Partant du fait que les problèmes se posant à nous dans dix années ne peuvent être concevables à l’heure actuelle, j’espère que ce blog sera un vecteur de simplification et de vulgarisation pour plus de résilience.</p>
+    <a href="https://github.com/sha-cmd/herbe_oie_riz/tree/master/_notebooks/2021-03-05-Bayesian-Statistics.ipynb" role="button" target="_blank">
+<img class="notebook-badge-image" src="/assets/badges/github.svg" alt="View On GitHub">
+    </a>
+</div>
 
-<p>Vous trouverez <a href="CV_romain_boyrie.pdf">mon CV</a> pour plus d’informations.</p>
+          <div class="px-2">
+    <a href="https://mybinder.org/v2/gh/sha-cmd/herbe_oie_riz/master?filepath=_notebooks%2F2021-03-05-Bayesian-Statistics.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/assets/badges/binder.svg" alt="Open In Binder"/>
+    </a>
+</div>
 
-<h1 id="posts">Posts</h1>
+          <div class="px-2">
+    <a href="https://colab.research.google.com/github/sha-cmd/herbe_oie_riz/blob/master/_notebooks/2021-03-05-Bayesian-Statistics.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/assets/badges/colab.svg" alt="Open In Colab"/>
+    </a>
+</div>
+        </div>
+      </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <!--
+#################################################
+### THIS FILE WAS AUTOGENERATED! DO NOT EDIT! ###
+#################################################
+# file to edit: _notebooks/2021-03-05-Bayesian-Statistics.ipynb
+-->
+
+<div class="container" id="notebook-container">
+        
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Th&#233;or&#232;me-de-Bayes-:">Th&#233;or&#232;me de Bayes :<a class="anchor-link" href="#Th&#233;or&#232;me-de-Bayes-:"> </a></h2><p>Voici tout se dont vous devez savoir à propos des statistiques (R. Feynman) :</p>
+<p>$P(\theta|y) = \frac{P(y|\theta)\cdot P(\theta)}{P(y)}$</p>
+<p>D’après la règle des produits :</p>
+<p>$P(\theta,y) = P(\theta|y)P(y)$</p>
+<p>ou</p>
+<p>$P(\theta,y) = P(y|\theta)P(\theta)$</p>
+<p>Ce qui équivaut en les combinant à :</p>
+<p>$P(\theta|y)P(y) = P(y|\theta)P(\theta)$</p>
+<p>Si nous remplaçons $\theta$ par l’hypothèse et y par les data, le théorème de Bayes nous dit comment calculer la probabilité de notre hypothèse sachant nos données. L’hypothèse est transformé en probabilité en utilisant des distributions de probabilités.</p>
+<p>$P(\theta)$ : Primauté, les statisticiens la qualifie de subjective.</p>
+<p>$P(y|\theta)$ : La certitude, le modèle de l’échantillon, le modèle statisque ou le modèle.</p>
+<p>$P(\theta|y)$ : Le posterieur de la distribution, c’est une distribution de probabilité pour notre paramètre $\theta$ et non une simple valeur.</p>
+<p>$P(y)$ : Probabilité marginale, ou évidence. Peut-être ignoré par les débutants, en ne la considérant que comme une valeur relative et non pas comme une valeur absolue.</p>
+<h3 id="&#192;-quoi-sert-il">&#192; quoi sert-il<a class="anchor-link" href="#&#192;-quoi-sert-il"> </a></h3><p>Les probabilités sont des outils pour mesurer l’incertitude à propos de paramètres, et le théorème de Bayes est le méchanisme pour mettre à jour correctement ces probabilités à la lumière de nouvelles données, avec l’espoir de pouvoir réduire l’incertitude.</p>
+
+</div>
+</div>
+</div>
+</div>
 
 
 
-  
-
-  <!-- Hide posts if front matter flag hide:true -->
-  
-  
-
-  <!-- Sort posts by rank, then date -->
-  
-  
-  
-
- 
-  
-
-   <!-- Assemble final sorted posts array -->
-  
-  <ul class="post-list"><li><div class="Box box-shadow-medium rounded-1 col-12"><div class="col-4 d-table-cell p-3 v-align-middle">
-        <img class="image-preview " src="/images/statistics/statistics.png" />
-      </div><div class="col-8 d-table-cell p-3">
-        <h3>
-          <a class="post-link" href="/statistiques/2021/02/26/Statistics.html">
-            Statistiques
-          </a>
-        </h3>
-        <p class="post-meta-description">Quelques rappel sur les outils statistiques.</p>
-          <p class="post-meta">Feb 26, 2021</p>
-      </div>
-  </div></li><li><div class="Box box-shadow-medium rounded-1 col-12"><div class="col-4 d-table-cell p-3 v-align-middle">
-        <img class="image-preview " src="/images/daily_observations/header_observations.jpg" />
-      </div><div class="col-8 d-table-cell p-3">
-        <h3>
-          <a class="post-link" href="/vie%20priv%C3%A9e/2021/01/29/Daily-Observations.html">
-            Quelques Observations Quotidiennes
-          </a>
-        </h3>
-        <p class="post-meta-description">Vous n’avez probablement rien à faire ici, ce serait une erreur pour vous de rester, merci de ne pas diffuser par des liens ou autres moyens de diffusion le contenu de cette page.</p>
-          <p class="post-meta">Jan 29, 2021</p>
-      </div>
-  </div></li><li><div class="Box box-shadow-medium rounded-1 col-12"><div class="col-4 d-table-cell p-3 v-align-middle">
-        <img class="image-preview " src="/images/signification/signification.PNG" />
-      </div><div class="col-8 d-table-cell p-3">
-        <h3>
-          <a class="post-link" href="/math/statistiques/2020/12/16/Signification-statistique.html">
-            Signification statistique
-          </a>
-        </h3>
-        <p class="post-meta-description">Est-il sensé de déclarer que l’on peut parvenir à une vérité par les statistiques, alors que tout dépend du nombre d’observations ?</p>
-          <p class="post-meta">Dec 16, 2020</p>
-      </div>
-  </div></li><li><div class="Box box-shadow-medium rounded-1 col-12"><div class="col-4 d-table-cell p-3 v-align-middle">
-        <img class="image-preview " src="/images/matrix/matrix.jpg" />
-      </div><div class="col-8 d-table-cell p-3">
-        <h3>
-          <a class="post-link" href="/math/matrices/2020/12/10/Matrix.html">
-            Matrices
-          </a>
-        </h3>
-        <p class="post-meta-description">De la volute de fumée de cigarette, au vol des oiseaux, tout peut s’exprimer en matrice dans la nature.</p>
-          <p class="post-meta">Dec 10, 2020</p>
-      </div>
-  </div></li><li><div class="Box box-shadow-medium rounded-1 col-12"><div class="col-8 d-table-cell p-3">
-        <h3>
-          <a class="post-link" href="/statistiques/anova/2020/11/12/One-way-ANOVA.html">
-            One-way ANOVA
-          </a>
-        </h3>
-        <p class="post-meta-description">Comparaison d’une variable indépendante dans plusieurs groupe par l’analyse de leur variance.</p>
-          <p class="post-meta">Nov 12, 2020</p>
-      </div>
-  </div></li><li><div class="Box box-shadow-medium rounded-1 col-12"><div class="col-8 d-table-cell p-3">
-        <h3>
-          <a class="post-link" href="/2020/01/01/Microsoft-Word-Example-Post.html">
-            Microsoft Word Example Post
-          </a>
-        </h3>
-        <p class="post-meta-description"></p>
-          <p class="post-meta">Jan 1, 2020</p>
-      </div>
-  </div></li></ul>
-
-    </div>
+  </div><!-- from https://github.com/utterance/utterances -->
+<script src="https://utteranc.es/client.js"
+        repo="sha-cmd/herbe_oie_riz"
+        issue-term="title"
+        label="blogpost-comment"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script><a class="u-url" href="/statistiques/2021/03/05/Bayesian-Statistics.html" hidden></a>
+</article>
       </div>
     </main><footer class="site-footer h-card">
   <data class="u-url" href="/"></data>
