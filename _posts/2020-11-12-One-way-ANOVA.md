@@ -1,6 +1,6 @@
 ---
 keywords: fastai
-description: Comparaison d’une variable indépendante dans plusieurs groupe par l’analyse de leur variance.
+description: Comparaison d’une variable indépendante dans plusieurs groupes par l’analyse de leur variance.
 title: "One-way ANOVA"
 categories: [statistiques, ANOVA]
 nb_path: _notebooks/2020-11-12-One-way-ANOVA.ipynb
