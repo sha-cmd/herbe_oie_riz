@@ -1,6 +1,6 @@
 ---
 keywords: fastai
-description: Quelques rappel sur les outils statistiques.
+description: Quelques rappels sur les outils statistiques.
 title: "Statistiques"
 toc: true
 badges: true
