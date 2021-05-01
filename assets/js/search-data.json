@@ -95,7 +95,7 @@
   
       ,"page1": {
           "title": "About Me",
-          "content": "Passionné par les logiciels libres, j’ai œuvré longtemps pour leur diffusion auprès du grand public et des entreprises. . Pour poursuivre cette mission, j’ai décidé de compléter mon apprentissage en science informatique et de continuer d’abord vers l’algorithmique, ensuite vers la science des données. . Ayant soif d’apprendre, je n’hésite pas à être curieux, pour approfondir mes connaissances, et jusqu’à récemment, je ne réalisais pas bien les conversions possibles vers les métiers de l’informatique. . Avec l’arrivée de la Covid-19, et de grands bouleversements dans ma vie, les choses ont évoluées plutôt en s’aggravant, mais toujours égal à moi-même, j’ai utilisé la situation comme un levier pour réaliser mon projet en mutant de développeur, vers le métier de l’ingénierie de l’Intelligence Artificielle. . À l’heure actuelle, j’espère achever le dernier cycle d’étude pour pouvoir prétendre à un métier à la jonction de beaucoup de domaines. J’espère que mon exemple donnera de l’espoir à toutes les personnes qui ont encore des rêves en leur permettant de continuer comme moi, à croire en les leurs. .",
+          "content": "Passionné par l’informatique, j’ai œuvré longtemps pour faciliter son accés auprès du grand public et des entreprises. . C’est donc tout naturellement que j’ai décidé de compléter mon apprentissage en science informatique et de me former d’abord à l’algorithmie, ensuite à la science des données. . Ayant soif d’apprendre, je n’hésite pas à être curieux, pour approfondir mes connaissances, et jusqu’à récemment, je ne réalisais pas bien les conversions possibles vers les métiers de l’informatique de haut niveau. . Avec l’arrivée de la Covid-19, et de grands bouleversements dans ma vie professionnelle et personnelle, les choses ont évoluées plutôt en s’aggravant, mais toujours égal à moi-même, j’ai utilisé la situation comme un levier pour réaliser mon projet en mutant du poste de développeur, vers celui d’ingénieur en Intelligence Artificielle. . À l’heure actuelle, j’espère achever un dernier cycle d’étude pour pouvoir obtenir le sésame pour un métier au confluent de beaucoup de domaines. J’espère cependant que mon exemple donnera de l’espoir à toutes les personnes qui ont encore des rêves en leur permettant de continuer comme moi, à croire en les leurs. .",
           "url": "https://blog.rboyrie.info/about/",
           "relUrl": "/about/",
           "date": ""
@@ -103,6 +103,15 @@
       
   
 
+  
+      ,"page2": {
+          "title": "",
+          "content": "Bienvenu(e) sur ce site. Il contient des informations pour faire de la science avec le langage Python. . Les points forts de ce site est qu’il est en français et qu’il contient des sujets particulièrement intéressants sur les mathématiques, les statistiques et l’informatique. . Au travers de plusieurs domaines comme la médecine, les transports, la finance et l’industrie, les pages de ce blog sont à la base, une boîte à idées pour trouver des solutions pour observer et expérimenter la science pour tous. . Il s’agit notamment de compléter les pages des sciences de wikipédia par des exemples reproductibles chez soi, avec un langage informatique. . Partant du fait que les problèmes se posant à nous dans dix années ne peuvent être concevables à l’heure actuelle, j’espère que ce blog sera un vecteur de simplification et de vulgarisation pour plus de résilience. . Vous trouverez mon CV pour plus d’informations. . Posts .",
+          "url": "https://blog.rboyrie.info/",
+          "relUrl": "/",
+          "date": ""
+      }
+      
   
 
   
